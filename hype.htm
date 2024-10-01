@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Mamah's CV</title>
+    <button onclick="jumpToPictures()">View Pictures</button>
+    <style>
+        * {
+            margin: 5;
+            padding: 5;
+            box-sizing: border-box;
+        }
+
+        button {
+          background-color: purple;
+          color: white;
+          border: none;
+          padding: 20px 20px;
+        }
+
+        button:hover {
+        background-color: blue;   
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            text-align: center;
+            padding: 20px 20;
+            margin: 5 5;
+        }
+
+
+        .header {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 0;
+            background-color: gray;
+          
+        }
+
+        .header h1 {
+            font-size: 32 px;
+        }
+
+        .about {
+           
+           
+        }
+
+        .portfolio {
+           display: flex;
+           justify-content: space-between;
+           width: 100%
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+       
+    </style>
+</head>
+<body>
+        <div class="header">
+            <h1>Mamah Victor</h1>
+            <p>Ikeja, Lagos</p>
+            <a href="mail to: victor.mamah.247308@unn.edu.ng">Email</a>
+            <p>09050818665</p>
+        </div>
+
+        
+        <div class="about">
+            <h2>About Me</h2>
+            <p>Computer Science undergraduate at University of Nigeria, Nsukka.</p>
+        </div>
+ 
+        <div>
+          <h2 opacity="0.8" >Personal Details</h2>
+          <p><strong>Date of birth:</strong> 22-05-2002</p>
+          <p><strong>Highest Level of Education:</strong> Undergraduate</p>
+          <p><strong>State of Employment:</strong> Unemployed</p>
+          <p><strong>Industry:</strong> Computer Science</p>
+        </div>
+        
+        <div>
+          <h2>Education</h2>
+          <h3>Bsc. Computer Science</h3>
+          <h4>University of Nigeria, Nsukka</h4>
+          <p><em>May 2023-Present</em></p>
+         </div>
+
+        <div>
+         <h2>Skills</h2>
+         <p>Microsoft Office</p>
+         <p>Sound Design</p>
+         <p>Music Production</p>
+         <p>Graphic Design</p>
+         <p>Video Editing</p>
+         <p>HTML, CSS and JavaScript</p>
+        </div>
+       
+        <div>
+          <h2>Portfolio<h2>
+           <img src=https://i.ibb.co/nrg2Whk/3d1.png" alt="Brand Logo" width="460" height="315" >
+          <iframe width="420" height="315"
+src="https://www.youtube.com/embed/A6SYio33BGg?si=ZtsEr5M-7mTR0fl9">
+          </iframe>
+            <iframe width="420" height="315"
+src="https://www.youtube.com/embed/Jf0ZN7Br2co?si=qtKExUsLPBm1MIZp">
+</iframe> 
+        <div id="pictures" >
+          <h2 id="pictures" >Pictures</h2>
+        </div>
+        <div class="portfolio">
+            <img src="https://i.ibb.co/yY9RWDC/Snapchat-911812159.jpg" alt="Mamah Victor holding up peace sign" >
+            <img src="https://i.ibb.co/cLL5hBR/Photo-from-Veecii.jpg" alt="Mamah Victor sitting down" >
+            <img src="https://i.ibb.co/t4PRWw2/Photo-from-Veecf.jpg" alt="Mamah Victor laughing" >
+            <img src="https://i.ibb.co/MMKn7jK/Photo-from-Veec3.jpg" alt="Mamah Victor on a sunny day in Nsukka">
+            <img src="https://i.ibb.co/xfYkVsW/Photo-from-Veeci.jpg" alt="Mamah Victor sitting down" >
+            
+            <script>
+              function jumpToPictures() {
+                const picturesSection = document.getElementById("pictures");
+              if (picturesSection) {
+              picturesSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }
+            </script>
+
+        </div>
+
+        
+    </div>
+</body>
+</html>
